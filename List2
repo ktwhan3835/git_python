@@ -1,0 +1,22 @@
+#list of matrix
+#역슬레쉬=\는 이어지게하는 역할 
+a = [[1, 2, 3], \
+     [4, 5 ,6], \
+     [7, 8, 9]]
+print(a)
+print(a[1])    #2행인 4,5,6 출력
+print(a[1][2]) #2행의 3번째
+print(a[2][1]) #3행의 2번째
+
+#------------------------------------
+
+#list of string
+family = ['mother', 'father', 'gentleman', 'lady']
+len(family)
+print(family)
+
+print(family[2])           #3번째 원소출력
+
+family.remove('gentleman') #제거
+print(family)
+print(len(family))         #크기 출력
