@@ -1,0 +1,10 @@
+#c,d 값 비교하는 if문
+c = 15 * 5
+d =  15 + 15 + 15 + 15 + 15 + 15
+
+if c > d:
+    print('c > d')
+elif c==d:
+    print('c == d')
+else:
+    print('c < d')
