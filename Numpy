@@ -1,0 +1,20 @@
+#from numpy import array, sqrt, sin(* = include all source)
+from numpy import *
+a = array([0.0, 4.0, 9.0, 16.0])
+print(a)             #기본 a 출력
+print(a/16.0)
+print(a - 4.0)
+
+print(sqrt(a))
+print(sin(a))
+
+#------------------------------------------
+
+A = array([[4,-2,1],[-2,4,-2],[1,-2,3]],float)
+b = array([1,4,3],float)
+
+print(diagonal(A))              #대각선 값
+print(diagonal(A,1))
+print(trace(A))
+print(argmax(b))
+print(identity(3))
