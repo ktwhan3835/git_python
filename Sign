@@ -1,0 +1,12 @@
+#정의(def)하고 a 값에 따른 출력
+def sign_of_a(a):
+    if a < 0.0:
+        sign = 'negative'
+    elif a > 0.0:
+        sign = 'positive'
+    else:
+        sign = 'zero'
+    return sign
+
+a = 1.5
+print('a is ' + sign_of_a(a))
