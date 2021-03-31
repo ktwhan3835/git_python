@@ -1,0 +1,13 @@
+s = 'hello'     #s,t = string
+t = 'to you'
+a = [1,2,3]     #a = list
+
+print(3 * s)
+
+print(3 * a)
+
+print(a + [4,5])
+
+print(s +' '+ t)
+
+# print(3 + s) 숫자와 문자 덧셈은 불가
