@@ -1,0 +1,25 @@
+#There are three functions in numpy that compute array products.
+from numpy import *
+x = array([7,3])
+y = array([2,1])
+A = array([[1,2],[3,2]])
+B = array([[1,1],[2,2]])
+
+
+print(A)
+print(B)
+
+# Dot product
+print("dot(x,y) =\n",dot(x,y)) # {x}.{y}
+print("dot(A,x) =\n",dot(A,x)) # [A]{x}
+print("dot(A,B) =\n",dot(A,B)) # [A][B]
+
+# Inner product
+print("inner(x,y) =\n",inner(x,y)) # {x}.{y}
+print("inner(A,x) =\n",inner(A,x)) # [A]{x}
+print("inner(A,B) =\n",inner(A,B)) # [A][B_transpose]
+
+# Outer product
+print("outer(x,y) =\n",outer(x,y))
+print("outer(A,x) =\n",outer(A,x))
+print("outer(A,B) =\n",outer(A,B))
