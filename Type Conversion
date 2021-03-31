@@ -1,0 +1,13 @@
+a = 5           #integer
+b = -3.6        #float
+d = '4.0'       #string
+
+print(a + b)    # integer + float 는 float로 바뀜
+
+print(int(b))   #type conversion from float to integer
+
+print(complex(a, b))    #create a complex number
+
+print(float(d))    #type conversion from string to float
+
+print(int(float(d)))    #type conversion string -> float -> integer 
