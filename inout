@@ -1,0 +1,61 @@
+#input and output of python
+nam = input('who are you?')
+print('welcome ', nam)
+
+#============================================
+
+#string of python 값을 한번 할당하면 변경 불가
+
+string1 = 'Press return to exit'
+string2 = 'the program'
+print(string1+' '+string2)
+print(string1[0:12])
+print(string1[0:3]) #실제출력은 0~2까지 -1까지됨
+print(string2[4:11])
+
+#split of python
+s = '3 9 81'
+print(s)
+print(s.split()) #각각 분리되어 출력
+
+#string, tuple은 변경 불가// list,array는 변경 가능
+#Ex) string1[0] = 'p' 대문자를 소문자로 변경 x
+
+#=============================================
+
+#tuple of python 둥근괄호 () 사용
+rec = ('Taehwan', 'Kong', (4, 16, 95))
+lastName, firstName, birthdate = rec
+
+print(firstName)
+
+birthYear = birthdate[2]
+print(birthYear)
+
+name = rec[1]+' '+rec[0]
+print(name)
+
+print(rec[0:2])
+print(firstName,lastName,birthdate)
+
+#=============================================
+#List of python
+a = [1.0, 2.0, 3.0]
+a.append(4.0)
+print(a)
+
+a.insert(0,0.0)
+print(a)
+
+print(len(a))
+
+a[2:4] = [1.0, 1.0, 1.0] #2,3은 대체후 끼워넣기로 하나 추가됨
+print(a)
+
+b = a
+b[0] = 5.0
+print(a)
+
+c = a[:]
+c[0] = 1.0
+print(a)
