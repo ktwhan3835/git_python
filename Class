@@ -1,0 +1,17 @@
+class Calculator:                    #define class
+    def __init__(self):
+        self.result = 0
+
+    def adder(self, num):
+        self.result += num
+        return self.result
+
+cal1 = Calculator()                  #create an instance from Calculator class
+                                     #result = 0, cal1
+cal2 = Calculator()                  #result = 0, cal2 각각 다른 Cal
+
+print('instance cal1 result = {0}'.format(cal1.adder(3)))                    
+print('instance cal1 result = {0}'.format(cal1.adder(4)))                
+#result +=3, cal1의 값 , 3의값에 +4 하면 7
+print('instance cal2 result = {0}'.format(cal2.adder(3)))
+print('instance cal2 result = {0}'.format(cal2.adder(7)))
