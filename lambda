@@ -1,0 +1,2 @@
+c = lambda x, y: x**2 + y**2
+print('result of lambda = {0}'.format(c(3,4)))
