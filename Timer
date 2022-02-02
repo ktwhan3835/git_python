@@ -1,0 +1,46 @@
+#include <SimpleTimer.h>
+#define LED 13
+#define SWITCH 8
+SimpleTimer timer;
+int SWsignal;
+
+void setup() {
+  pinMode(LED, OUTPUT);
+  pinMode(SWITCH, INPUT);
+  Serial.begin(9600);
+  timer.setInterval(500, toggleON);
+  timer.setInterval(2000, toggleOFF);
+  timer.setInterval(100, notify);
+}
+
+void loop() {
+  timer.run();
+}
+
+void toggleON() {
+  if(SWsignal==HIGH) {
+    if(digitalRead(LED)==HIGH) {
+      digitalWrite(LED,LOW);
+    }
+    else {
+      digitalWrite(LED,HIGH);
+    }
+  }
+}
+
+void toggleOFF() {
+  if(SWsignal==LOW) {
+    if(digitalRead(LED)==LOW) {
+      digitalWrite(LED,HIGH);
+    }
+    else {
+      digitalWrite(LED,LOW);
+    }
+  }
+}
+
+void notify() {
+  SWsignal=digitalRead(SWITCH);
+  Serial.print("SWsignal:");
+  Serial.println(SWsignal);
+}
